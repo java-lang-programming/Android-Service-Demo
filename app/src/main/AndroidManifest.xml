@@ -19,9 +19,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ContentProviderVideoActivity" />
-        <activity android:name=".ui.MediaShowActivity"
+        <activity
+            android:name=".ui.MediaShowActivity"
             android:configChanges="orientation|screenSize"
-            android:screenOrientation="behind"></activity>
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".ui.ValidationViewGeneratorDemoActivity"
+            android:label="@string/title_activity_validation_view_generator_demo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -24,4 +24,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ContentProvider Generator Demo" />
+
+    <Button
+        android:id="@+id/vvg_btn"
+        android:layout_below="@+id/cpg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validation View Generator Demo" />
 </RelativeLayout>

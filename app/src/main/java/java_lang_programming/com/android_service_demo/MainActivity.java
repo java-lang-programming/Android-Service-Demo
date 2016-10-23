@@ -16,12 +16,14 @@ import android.view.View;
 import android.widget.Button;
 
 import java_lang_programming.com.android_service_demo.ui.MediaShowActivity;
+import java_lang_programming.com.android_service_demo.ui.ValidationViewGeneratorDemoActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Button umgBtn;
     private Button cpgBtn;
+    private Button vvgBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 moveContentProviderVideoActivity();
+            }
+        });
+
+        vvgBtn = (Button) findViewById(R.id.vvg_btn);
+        vvgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveValidationViewGeneratorDemoActivity();
             }
         });
 
@@ -135,5 +145,13 @@ public class MainActivity extends AppCompatActivity
      */
     private void moveContentProviderVideoActivity() {
 
+    }
+
+    /**
+     * transfer to ValidationViewGeneratorDemoActivity
+     */
+    private void moveValidationViewGeneratorDemoActivity() {
+        Intent intent = new Intent(this, ValidationViewGeneratorDemoActivity.class);
+        startActivity(intent);
     }
 }

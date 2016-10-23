@@ -1,0 +1,3 @@
+<resources>
+    <integer name="username_max_count">15</integer>
+</resources>
